@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 * {
 	padding: 0px;
 	margin: 0px;
@@ -38,7 +40,7 @@ body {
 
 body {
 	line-height: 1;
-	font-family: "";
+	font-family: "Montserrat";
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -47,7 +49,7 @@ body {
 input,
 button,
 textarea {
-	font-family: "";
+	font-family: "Montserrat";
 }
 
 input::-ms-clear {
@@ -99,16 +101,24 @@ body.lock {
 }
 
 .wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 0;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	width: 100%;
-	min-height: 100%;
+	min-height: 100vh;
 	overflow: hidden;
 }
 .container {
-	max-width: 1170px;
+	max-width: 1600px;
 	margin: 0 auto;
 	width: 100%;
 }
-@media (max-width: 1182px) {
+@media (max-width: 1612px) {
 	.container {
 		max-width: 970px;
 	}
@@ -140,6 +150,27 @@ body.lock {
 .btn {
 	display: inline-block;
 	padding: 0px 0px;
+	width: 180px;
+	height: 50px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.btn span {
+	line-height: 44px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 0px 30px;
+}
+.btn:hover {
+	background-color: #fff;
+	border: 2px solid #000;
+}
+.btn:hover span {
+	color: #c0301c;
 }
 .btn.fw {
 	width: 100%;
@@ -859,3 +890,70 @@ body.ie .ibg img {
 		}
 	}
 */
+.mainscreen {
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 0;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.mainscreen__img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.mainscreen__shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.45;
+	background-color: #000000;
+}
+.mainscreen__content {
+	position: relative;
+	z-index: 22;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 0;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+}
+.mainscreen__title {
+	font-family: Montserrat;
+	font-size: 48px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin: 0px 0px 25px 0px;
+}
+.mainscreen__text {
+	font-family: "Roboto Slab";
+	font-size: 20px;
+	color: #ffffff;
+	margin: 0px 0px 40px 0px;
+}
+.mainscreen__button {
+	font-family: Montserrat;
+	font-size: 16px;
+}
