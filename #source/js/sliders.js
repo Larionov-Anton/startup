@@ -1,12 +1,13 @@
 //SLIDERS
-if($('.mainslider').length>0){
-	$('.mainslider').slick({
+if($('.about-us__slider').length>0){
+	$('.about-us__slider').slick({
 		//autoplay: true,
 		//infinite: false,
-		dots: true,
-		arrows: false,
+		variableWidth: true,
+		dots: false,
+		arrows: true,
 		accessibility:false,
-		slidesToShow:1,
+		// slidesToShow:4,
 		autoplaySpeed: 3000,
 		//asNavFor:'',
 		//appendDots:

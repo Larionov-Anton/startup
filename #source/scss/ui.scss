@@ -199,11 +199,30 @@ body.ie {
 	}
 	.slick-slide {
 		position: relative;
+		margin: 0px 32px 0px 0px;
 	}
 	.slick-arrow {
+		width: 35px;
+		height: 38px;
+		position: absolute;
+		top: 42%;
+		z-index: 3;
+		@include tr(0, -50%, 0);
+		@include anim(0.5s,0s);
 		&.slick-prev {
+			left: 0;
+			background: rgba(85, 85, 85, 0.2) url('../../img/icons/about-us/left.png') center no-repeat;
+			z-index: 5;
+			&:hover {
+				background-color: #c0301c;
+			}
 		}
 		&.slick-next {
+			right: 0;
+			background: rgba(85, 85, 85, 0.2) url('../../img/icons/about-us/right.png') center no-repeat;
+			&:hover {
+				background-color: #c0301c;
+			}
 		}
 	}
 	.slick-dots {

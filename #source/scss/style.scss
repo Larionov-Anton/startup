@@ -140,7 +140,7 @@ body {
 		font-weight: 400;
 		text-transform: uppercase;
 		color: #ffffff;
-		margin: 0px 0px 25px 0px;
+		margin: 0px 0px 30px 0px;
 	}
 
 	// .mainscreen__text
@@ -370,6 +370,123 @@ body {
 		 }
 	}
 }
+
+//====================================================================================================
+
+.about-us {
+	background-color: #f8f8f8;
+	padding: 95px 0px;
+	// .about-us__header
+
+	&__header {
+		margin: 0px 0px 65px 0px;
+	}
+
+	// .about-us__text
+
+	&__text {
+		@include flexbox();
+		margin: 0px -15px 70px -15px;
+		p {
+			font-family: 'Roboto Slab';
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: 400;
+			color: #555555;
+			padding: 0px 15px;
+		}
+	}
+
+	// .about-us__slider
+
+	&__slider {}
+
+		// .about-us__item
+
+	&__item {
+		text-align: center;
+	}
+
+	// .about-us__img
+
+	&__img {
+		width: 263px;
+		height: 250px;
+		margin: 0px 0px 15px 0px;
+		position: relative;
+	}
+
+	// .about-us__social
+
+	&__social {
+		@include flexbox();
+		justify-content: center;
+		align-items: end;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		padding: 0px 0px 30px 0px;
+		background-color: rgba(85, 85, 85, 0.5);
+		@include anim(0.3s,0s);
+		opacity: 0;
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	// .about-us__link
+
+	&__link {
+		width: 28px;
+		height: 28px;
+		margin: 0px 5px;
+		@include anim(0.3s,0s);
+		&:hover {
+			background-color: #c0301c;
+		}
+		&--01 {
+			background:  url('../../img/icons/about-us/social_01.png') center no-repeat;
+		}
+		&--02 {
+			background:  url('../../img/icons/about-us/social_02.png') center no-repeat;
+		}
+		&--03 {
+			background:  url('../../img/icons/about-us/social_03.png') center no-repeat;
+		}
+		&--04 {
+			background:  url('../../img/icons/about-us/social_04.png') center no-repeat;
+		}
+	}
+
+	// .about-us__name
+	
+	&__name {
+		font-family: Montserrat;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #555555;
+		margin: 0px 0px 5px 0px;
+	}
+	
+	// .about-us__post
+	
+	&__post {
+		font-family: 'Roboto Slab';
+		font-size: 13px;
+		line-height: 24px;
+		font-weight: 400;
+		color: #555555;
+	}
+}
+
+
+
+
+
 
 //====================================================================================================
 
