@@ -21,7 +21,7 @@ $fontfamily: "Montserrat";
 
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minwidth: 320px;
-$mw: 1600;
+$mw: 1145;
 $md1: $mw + 12;
 $md2: 991.98;
 $md3: 767.98;
@@ -191,6 +191,185 @@ body {
 	}
 }
 
+
+//====================================================================================================
+
+.servises {
+	padding: 95px 0px;
+	// .servises__header
+
+	&__header {
+		margin: 0px 0px 70px 0px;
+	}
+
+	// .servises__row
+
+	&__row {
+		@include flexbox();
+		margin: 0px -20px;
+	}
+
+	// .servises__item
+
+	&__item {
+		flex: 0 1 33.333%;
+		padding: 0px 20px;
+	}
+
+	@media (max-width:$md3+px){
+		padding: 55px 0px;
+		&__header {
+			margin: 0px 0px 40px 0px;
+		} 
+		&__row {
+			flex-direction: column;
+		} 
+		&__item {
+			margin: 0px 0px 20px 0px;
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+	@media (max-width:$md4+px){
+		padding: 35px 0px;
+		&__header {
+			margin: 0px 0px 30px 0px;
+		} 
+	}
+}
+
+.header-servises {
+	text-align: center;
+	// .header-servises__title
+
+	&__title {
+		position: relative;
+		font-family: Montserrat;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #555555;
+		margin: 0px 0px 56px 0px;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			bottom: -28px;
+			left: 50%;
+			width: 50px;
+			height: 2px;
+			background-color: #555555;
+			@include tr(-50%, 0, 0);
+		}
+	}
+
+	// .header-servises__text
+
+	&__text {
+		font-family: 'Roboto Slab';
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+		color: #555555;
+	}
+
+	@media (max-width:$md4+px){
+		&__title {
+			font-size: 18px;
+			margin: 0px 0px 36px 0px;
+			&:after {
+				bottom: -18px;
+				height: 1px;
+			}
+		} 
+		&__text {
+			font-size: 14px;
+		}
+	}
+}
+
+.item-servises {
+
+	// .item-servises__body
+
+	&__body {
+		@include flexbox();
+		flex-direction: column;
+		align-items: center;
+	}
+
+	// .item-servises__icon
+
+	&__icon {
+		width: 90px;
+		height: 90px;
+		border: 2px solid #dddddd;
+		border-radius: 50%;
+		background-color: #c0301c;
+		margin: 0px 0px 25px 0px;
+		cursor: pointer;
+		@include anim(0.5s,0s);
+		&--01 {
+			background:  url('../../img/icons/servises/01_red.png') center no-repeat;
+			&:hover {
+				background: #c0301c url('../../img/icons/servises/01.png') center no-repeat;
+			}
+		}
+		&--02 {
+			background:  url('../../img/icons/servises/02.png') center no-repeat;
+			&:hover {
+				background: #c0301c url('../../img/icons/servises/02_white.png') center no-repeat;
+			}
+		}
+		&--03 {
+			background:  url('../../img/icons/servises/03.png') center no-repeat;
+			&:hover {
+				background: #c0301c url('../../img/icons/servises/03_white.png') center no-repeat;
+			}
+		}
+	}
+
+	// .item-servises__title
+
+	&__title {
+		font-family: Montserrat;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #555555;
+		margin: 0px 0px 20px 0px;
+	}
+
+	// .item-servises__text
+
+	&__text {
+		text-align: center;
+		font-family: 'Roboto Slab';
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+		color: #555555;
+	}
+
+	@media (max-width:$md4+px){
+		&__icon {
+			margin: 0px 0px 15px 0px;
+			width: 70px;
+			height: 70px;
+		}
+		 &__title {
+			font-size: 12px;
+			margin: 0px 0px 10px 0px;
+		 } 
+		 &__text {
+			font-size: 12px;
+		 }
+	}
+}
 
 //====================================================================================================
 
