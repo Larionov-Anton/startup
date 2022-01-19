@@ -4,6 +4,7 @@ if($('.about-us__slider').length>0){
 		//autoplay: true,
 		//infinite: false,
 		variableWidth: true,
+		adaptiveHeight: true,
 		dots: false,
 		arrows: true,
 		accessibility:false,
@@ -15,8 +16,10 @@ if($('.about-us__slider').length>0){
 		nextArrow:'<button type="button" class="slick-next"></button>',
 		prevArrow:'<button type="button" class="slick-prev"></button>',
 		responsive: [{
-			breakpoint: 768,
-			settings: {}
+			breakpoint: 1157,
+			settings: {
+				centerMode: true,
+			}
 		}]
 	});
 }

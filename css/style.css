@@ -782,6 +782,12 @@ body.ie .ibg img {
 .slick-slider .slick-arrow.slick-next:hover {
 	background-color: #c0301c;
 }
+@media (max-width: 1157px) {
+	.slick-slider .slick-slide {
+		margin: 0px 0px 0px 0px;
+	}
+}
+
 .tab__item {
 	display: none;
 }
@@ -1365,9 +1371,15 @@ body.ie .ibg img {
 	display: -ms-flexbox;
 	display: flex;
 	font-size: 0;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin: 0px -15px 70px -15px;
 }
 .about-us__text p {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 50%;
+	        flex: 0 1 50%;
 	font-family: "Roboto Slab";
 	font-size: 14px;
 	line-height: 24px;
@@ -1448,4 +1460,26 @@ body.ie .ibg img {
 	line-height: 24px;
 	font-weight: 400;
 	color: #555555;
+}
+@media (max-width: 767.98px) {
+	.about-us {
+		padding: 55px 0px;
+	}
+	.about-us__header {
+		margin: 0px 0px 35px 0px;
+	}
+	.about-us__text {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		text-align: center;
+		margin: 0px -15px 40px -15px;
+	}
+	.about-us__text p {
+		margin: 0px 0px 20px 0px;
+	}
+	.about-us__text p:last-child {
+		margin: 0px 0px 0px 0px;
+	}
 }

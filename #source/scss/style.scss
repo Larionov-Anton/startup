@@ -386,8 +386,10 @@ body {
 
 	&__text {
 		@include flexbox();
+		align-items: center;
 		margin: 0px -15px 70px -15px;
 		p {
+			flex: 0 1 50%;
 			font-family: 'Roboto Slab';
 			font-size: 14px;
 			line-height: 24px;
@@ -480,6 +482,24 @@ body {
 		line-height: 24px;
 		font-weight: 400;
 		color: #555555;
+	}
+
+	@media (max-width:$md3+px){
+		padding: 55px 0px; 
+		&__header {
+			margin: 0px 0px 35px 0px;
+		}
+		&__text {
+			flex-direction: column;
+			text-align: center;
+			margin: 0px -15px 40px -15px;
+			p {
+				margin: 0px 0px 20px 0px;
+				&:last-child {
+					margin: 0px 0px 0px 0px;
+				}
+			}
+		}
 	}
 }
 
