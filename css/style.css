@@ -1650,6 +1650,9 @@ body.ie .ibg img {
 	background: url("../../img/icons/latest-works/arrow.png") 51px 56% no-repeat;
 	padding: 0px 40px 0px 0px;
 }
+.hover-tab-item-latest-works__button:hover {
+	border: 2px solid #000;
+}
 @media (max-width: 767.98px) {
 	.hover-tab-item-latest-works__title {
 		font-size: 16px;
