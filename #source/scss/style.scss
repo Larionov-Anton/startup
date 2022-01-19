@@ -686,6 +686,7 @@ body {
 		width: 100px;
 		height: 38px;
 		background-color: #ffffff;
+		padding: 0px 0px 0px 20px;
 		span {
 			font-family: 'Roboto Slab';
 			font-size: 14px;
@@ -693,8 +694,8 @@ body {
 			text-transform: uppercase;
 			letter-spacing: 0.1em;
 			color: #c0301c;
-			padding: 0px 40px 0px 20px;
-			background: url('../../img/icons/latest-works/arrow.png') 70px 54% no-repeat;
+			background: url('../../img/icons/latest-works/arrow.png') 51px 56% no-repeat;
+			padding: 0px 40px 0px 0px;
 		}
 	}
 
@@ -710,11 +711,12 @@ body {
 		&__button {
 			width: 80px;
 			height: 28px;
+			padding: 0px 0px 0px 10px;
 			span {
 				font-size: 12px;
 				line-height: 25px;
-				padding: 0px 20px 0px 10px;
-				background: url('../../img/icons/latest-works/arrow.png') 55px 54% no-repeat;
+				padding: 0px 20px 0px 0px;
+				background: url('../../img/icons/latest-works/arrow.png') 45px 56% no-repeat;
 			}
 		}
 	}
@@ -724,5 +726,101 @@ body {
 
 
 //====================================================================================================
+
+.get-in-touch {
+	height: 369px;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(192, 48, 28, 0.6);
+	}
+	// .get-in-touch__img
+
+	&__img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		
+	}
+
+	// .get-in-touch__content
+
+	&__content {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		@include flexbox();
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+	}
+
+	// .get-in-touch__body
+
+	&__body {
+		max-width: 460px;
+		text-align: center;
+	}
+
+	// .get-in-touch__title
+
+	&__title {
+		font-family: 'Roboto Slab';
+		font-size: 30px;
+		line-height: 44px;
+		font-weight: 400;
+		color: #ffffff;
+		margin: 0px 0px 25px 0px;
+	}
+
+	// .get-in-touch__button
+
+	&__button {
+		padding: 0px 10px;
+		span {
+			font-family: 'Roboto Slab';
+			font-size: 18px;
+			text-transform: uppercase;
+			color: #ffffff;
+		}
+	}
+
+	@media (max-width:$md2+px){
+		height: 300px;
+	}
+	@media (max-width:$md3+px){
+		&__title {
+			font-size: 26px;
+		}
+		&__button {
+			span {
+				font-size: 16px;
+			}
+		}
+		 
+	}
+	@media (max-width:$md4+px){
+		height: 250px;
+		&__title {
+			font-size: 22px;
+			line-height: 34px;
+		} 
+	}
+}
+
+//====================================================================================================
+
+
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================

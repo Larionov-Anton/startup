@@ -154,6 +154,7 @@ body.lock {
 	height: 50px;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
+	padding: 0px 30px;
 	-webkit-transition: all 0.5s ease 0s;
 	-o-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
@@ -163,11 +164,9 @@ body.lock {
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #ffffff;
-	padding: 0px 30px;
 }
 .btn:hover {
 	background-color: #fff;
-	border: 2px solid #000;
 }
 .btn:hover span {
 	color: #c0301c;
@@ -1639,6 +1638,7 @@ body.ie .ibg img {
 	width: 100px;
 	height: 38px;
 	background-color: #ffffff;
+	padding: 0px 0px 0px 20px;
 }
 .hover-tab-item-latest-works__button span {
 	font-family: "Roboto Slab";
@@ -1647,8 +1647,8 @@ body.ie .ibg img {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: #c0301c;
-	padding: 0px 40px 0px 20px;
-	background: url("../../img/icons/latest-works/arrow.png") 70px 54% no-repeat;
+	background: url("../../img/icons/latest-works/arrow.png") 51px 56% no-repeat;
+	padding: 0px 40px 0px 0px;
 }
 @media (max-width: 767.98px) {
 	.hover-tab-item-latest-works__title {
@@ -1662,11 +1662,98 @@ body.ie .ibg img {
 	.hover-tab-item-latest-works__button {
 		width: 80px;
 		height: 28px;
+		padding: 0px 0px 0px 10px;
 	}
 	.hover-tab-item-latest-works__button span {
 		font-size: 12px;
 		line-height: 25px;
-		padding: 0px 20px 0px 10px;
-		background: url("../../img/icons/latest-works/arrow.png") 55px 54% no-repeat;
+		padding: 0px 20px 0px 0px;
+		background: url("../../img/icons/latest-works/arrow.png") 45px 56% no-repeat;
+	}
+}
+
+.get-in-touch {
+	height: 369px;
+	position: relative;
+}
+.get-in-touch:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(192, 48, 28, 0.6);
+}
+.get-in-touch__img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.get-in-touch__content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 0;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.get-in-touch__body {
+	max-width: 460px;
+	text-align: center;
+}
+.get-in-touch__title {
+	font-family: "Roboto Slab";
+	font-size: 30px;
+	line-height: 44px;
+	font-weight: 400;
+	color: #ffffff;
+	margin: 0px 0px 25px 0px;
+}
+.get-in-touch__button {
+	padding: 0px 10px;
+}
+.get-in-touch__button span {
+	font-family: "Roboto Slab";
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+@media (max-width: 991.98px) {
+	.get-in-touch {
+		height: 300px;
+	}
+}
+@media (max-width: 767.98px) {
+	.get-in-touch__title {
+		font-size: 26px;
+	}
+	.get-in-touch__button span {
+		font-size: 16px;
+	}
+}
+@media (max-width: 479.98px) {
+	.get-in-touch {
+		height: 250px;
+	}
+	.get-in-touch__title {
+		font-size: 22px;
+		line-height: 34px;
 	}
 }
