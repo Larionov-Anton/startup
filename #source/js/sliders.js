@@ -23,6 +23,32 @@ if($('.about-us__slider').length>0){
 		}]
 	});
 }
+
+if($('.brands__slider').length>0){
+	$('.brands__slider').slick({
+		// autoplay: true,
+		// infinite: true,
+		// variableWidth: true,
+		adaptiveHeight: true,
+		dots: true,
+		// centerMode:true,
+		arrows: false,
+		accessibility:false,
+		slidesToShow:1,
+		autoplaySpeed: 3000,
+		//asNavFor:'',
+		//appendDots:
+		//appendArrows:$('.mainslider-arrows .container'),
+		nextArrow:'<button type="button" class="slick-next"></button>',
+		prevArrow:'<button type="button" class="slick-prev"></button>',
+		responsive: [{
+			breakpoint: 1157,
+			settings: {
+				
+			}
+		}]
+	});
+}
 /*
 
 

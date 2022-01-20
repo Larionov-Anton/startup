@@ -158,6 +158,7 @@ $('#up').click(function (event) {
 	$('body,html').animate({ scrollTop: 0 }, 300);
 });
 
+
 // Табы
 $('body').on('click', '.tab__navitem', function (event) {
 	var eq = $(this).index();
@@ -173,6 +174,8 @@ $('body').on('click', '.tab__navitem', function (event) {
 		}
 	}
 });
+
+
 $.each($('.spoller.active'), function (index, val) {
 	$(this).next().show();
 });

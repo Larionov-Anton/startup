@@ -1035,5 +1035,93 @@ body {
 
 //====================================================================================================
 
+.brands {
+	padding: 95px 0px;
+	text-align: center;
+	background-color: #f8f8f8;
+	// .brands__icons
+	
+	&__icons {
+		@include flexbox();
+		align-items: center;
+		justify-content: center;
+		margin: 0px 0px 60px 0px;
+		img {
+			margin: 0px 60px 0px 0px;
+
+		}
+	}
+
+	&__slider {
+		
+	}
+
+	&__slide {
+		height: auto;
+	}
+	// .brands__quote
+
+	&__quote {
+		max-width: 765px;
+		margin: 0px auto;
+		font-family: 'Roboto Slab';
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: 400;
+		font-style: italic;
+		color: #555555;
+	}
+
+	// .brands__text
+
+	&__text {
+		margin: 0px 0px 35px 0px;
+	}
+
+	// .brands__author
+
+	&__author {
+		font-size: 20px;
+		font-style: normal;
+	}
+
+	@media (max-width:$md2+px){
+		&__icons {
+			flex-wrap: wrap;
+			img {
+				margin: 0px 20px 0px 0px;
+			}
+		}
+	}
+
+	@media (max-width:$md3+px){
+		padding: 55px 0px;
+		&__icons {
+			margin: 0px 0px 30px 0px;
+			img {
+				margin: 0px 20px 15px 0px;
+			}
+		} 
+		&__quote {
+			font-size: 16px;
+			line-height: 28px;
+		}
+		&__author {
+			font-size: 18px;
+		}
+	}
+
+	@media (max-width:$md4+px){
+		padding: 30px 0px; 
+		&__icons {
+			margin: 0px 0px 0px 0px;
+			img {
+				margin: 0px 20px 15px 0px;
+			}
+		} 
+	}
+}
+
+//====================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================

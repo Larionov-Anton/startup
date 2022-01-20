@@ -725,21 +725,21 @@ body.ie .ibg img {
 	-o-filter: grayscale(0);
 }
 
-.slick-slider {
+.about-us__slider {
 	position: relative;
 }
-.slick-slider .slick-track,
-.slick-slider .slick-list {
+.about-us__slider .slick-track,
+.about-us__slider .slick-list {
 	-webkit-transform: translate3d(0, 0, 0);
 	-ms-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
-.slick-slider .slick-list {
+.about-us__slider .slick-list {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 }
-.slick-slider .slick-track {
+.about-us__slider .slick-track {
 	position: relative;
 	width: 100%;
 	display: -webkit-box;
@@ -747,11 +747,12 @@ body.ie .ibg img {
 	display: flex;
 	font-size: 0;
 }
-.slick-slider .slick-slide {
+.about-us__slider .slick-slide {
 	position: relative;
+	height: auto;
 	margin: 0px 32px 0px 0px;
 }
-.slick-slider .slick-arrow {
+.about-us__slider .slick-arrow {
 	width: 35px;
 	height: 38px;
 	position: absolute;
@@ -766,25 +767,72 @@ body.ie .ibg img {
 	-o-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
-.slick-slider .slick-arrow.slick-prev {
+.about-us__slider .slick-arrow.slick-prev {
 	left: 0;
 	background: rgba(85, 85, 85, 0.2) url("../../img/icons/about-us/left.png") center no-repeat;
 	z-index: 5;
 }
-.slick-slider .slick-arrow.slick-prev:hover {
+.about-us__slider .slick-arrow.slick-prev:hover {
 	background-color: #c0301c;
 }
-.slick-slider .slick-arrow.slick-next {
+.about-us__slider .slick-arrow.slick-next {
 	right: 0;
 	background: rgba(85, 85, 85, 0.2) url("../../img/icons/about-us/right.png") center no-repeat;
 }
-.slick-slider .slick-arrow.slick-next:hover {
+.about-us__slider .slick-arrow.slick-next:hover {
 	background-color: #c0301c;
 }
 @media (max-width: 1157px) {
-	.slick-slider .slick-slide {
+	.about-us__slider .slick-slide {
 		margin: 0px 0px 0px 0px;
 	}
+}
+
+.brands__slider {
+	position: relative;
+}
+.brands__slider .slick-track,
+.brands__slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.brands__slider .slick-list {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.brands__slider .slick-track {
+	position: relative;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 0;
+}
+.brands__slider .slick-slide {
+	position: relative;
+}
+.brands__slider .slick-dots {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 0;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin: 35px 0px 0px 0px;
+}
+.brands__slider .slick-dots li button {
+	font-size: 0px;
+	width: 13px;
+	height: 13px;
+	background-color: #dddddd;
+	border-radius: 50%;
+	margin: 0px 5px;
+}
+.brands__slider .slick-dots li.slick-active button {
+	background-color: #c0301c;
 }
 
 .tab__item {
@@ -1951,5 +1999,85 @@ body.ie .ibg img {
 		-webkit-box-flex: 1;
 		    -ms-flex: 1 1 150px;
 		        flex: 1 1 150px;
+	}
+}
+
+.brands {
+	padding: 95px 0px;
+	text-align: center;
+	background-color: #f8f8f8;
+}
+.brands__icons {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 0;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin: 0px 0px 60px 0px;
+}
+.brands__icons img {
+	margin: 0px 60px 0px 0px;
+}
+.brands__slide {
+	height: auto;
+}
+.brands__quote {
+	max-width: 765px;
+	margin: 0px auto;
+	font-family: "Roboto Slab";
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 400;
+	font-style: italic;
+	color: #555555;
+}
+.brands__text {
+	margin: 0px 0px 35px 0px;
+}
+.brands__author {
+	font-size: 20px;
+	font-style: normal;
+}
+@media (max-width: 991.98px) {
+	.brands__icons {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+	.brands__icons img {
+		margin: 0px 20px 0px 0px;
+	}
+}
+@media (max-width: 767.98px) {
+	.brands {
+		padding: 55px 0px;
+	}
+	.brands__icons {
+		margin: 0px 0px 30px 0px;
+	}
+	.brands__icons img {
+		margin: 0px 20px 15px 0px;
+	}
+	.brands__quote {
+		font-size: 16px;
+		line-height: 28px;
+	}
+	.brands__author {
+		font-size: 18px;
+	}
+}
+@media (max-width: 479.98px) {
+	.brands {
+		padding: 30px 0px;
+	}
+	.brands__icons {
+		margin: 0px 0px 0px 0px;
+	}
+	.brands__icons img {
+		margin: 0px 20px 15px 0px;
 	}
 }
