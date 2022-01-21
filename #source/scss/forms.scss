@@ -84,14 +84,52 @@ input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:n
 .input{
 	border-radius: 0 !important;
 	width: 100%;
-	display: block;
+	display: inline-block;
 	padding: 0px 20px;
-	&.focus{}
-	&.err{}
+	width: 350px;
+	height: 44px;
+	border: 1px solid #555555;
+	font-family: 'Roboto Slab';
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #555555;
+	margin: 0px 30px 20px 0px;
+	&:nth-child(2), &:nth-child(4), &:nth-child(5) {
+		margin: 0px 0px 20px 0px;
+	}
+	&.focus{
+		border: 1px solid #c0301c;
+	}
+	&.err{
+		border: 2px solid #c0301c;
+	}
+	@media (max-width:$md3+px){
+		width: 100%;
+		height: 40px; 
+		margin: 0px 0px 20px 0px;
+
+	}
+	@media (max-width:$md4+px){
+		height: 35px; 
+		font-size: 10px;
+		margin: 0px 0px 10px 0px;
+		&:nth-child(2), &:nth-child(4), &:nth-child(5) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
 }
 textarea.input{
 	resize:none;
-	padding: 0px 0px;
+	padding: 10px 10px;
+	width: 730px;
+	height: 104px;
+	border: 1px solid #555555;
+	@media (max-width:$md3+px){
+		width: 100%;
+		height: 104px; 
+	}
 }
 //</INPUT>====================================================================================================
 

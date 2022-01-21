@@ -4,7 +4,7 @@ if($('.about-us__slider').length>0){
 		//autoplay: true,
 		//infinite: false,
 		variableWidth: true,
-		adaptiveHeight: true,
+		// adaptiveHeight: true,
 		dots: false,
 		arrows: true,
 		accessibility:false,

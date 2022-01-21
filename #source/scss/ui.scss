@@ -199,9 +199,9 @@ body.ie {
 	}
 	.slick-slide {
 		position: relative;
-		height: auto;
 		margin: 0px 32px 0px 0px;
 	}
+
 	.slick-arrow {
 		width: 35px;
 		height: 38px;
@@ -263,6 +263,7 @@ body.ie {
 		position: relative;
 		width: 100%;
 		@include flexbox();
+		align-items: start;
 		// justify-content: center;
 	}
 	.slick-slide {
