@@ -75,17 +75,17 @@ body {
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
-//@import "../../js/fancybox/jquery.fancybox.scss";
+//@import "../js/fancybox/jquery.fancybox.scss";
 //@import "datepicker.scss";
 //@import "fontawesome.scss";
 //@import "popover.min.scss";
 //@import "baguetteBox.scss";
 //@import "pagging.scss";
 //@import "icons.scss";
-@import "popup.scss";
+// @import "popup.scss";
 @import "header.scss";
 @import "footer.scss";
-@import "home.scss";
+// @import "home.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
@@ -313,21 +313,21 @@ body {
 		cursor: pointer;
 		@include anim(0.5s,0s);
 		&--01 {
-			background:  url('../../img/icons/servises/01_red.png') center no-repeat;
+			background:  url('../img/icons/servises/01_red.png') center no-repeat;
 			&:hover {
-				background: #c0301c url('../../img/icons/servises/01.png') center no-repeat;
+				background: #c0301c url('../img/icons/servises/01.png') center no-repeat;
 			}
 		}
 		&--02 {
-			background:  url('../../img/icons/servises/02.png') center no-repeat;
+			background:  url('../img/icons/servises/02.png') center no-repeat;
 			&:hover {
-				background: #c0301c url('../../img/icons/servises/02_white.png') center no-repeat;
+				background: #c0301c url('../img/icons/servises/02_white.png') center no-repeat;
 			}
 		}
 		&--03 {
-			background:  url('../../img/icons/servises/03.png') center no-repeat;
+			background:  url('../img/icons/servises/03.png') center no-repeat;
 			&:hover {
-				background: #c0301c url('../../img/icons/servises/03_white.png') center no-repeat;
+				background: #c0301c url('../img/icons/servises/03_white.png') center no-repeat;
 			}
 		}
 	}
@@ -453,16 +453,16 @@ body {
 			background-color: #c0301c;
 		}
 		&--01 {
-			background:  url('../../img/icons/about-us/social_01.png') center no-repeat;
+			background:  url('../img/icons/about-us/social_01.png') center no-repeat;
 		}
 		&--02 {
-			background:  url('../../img/icons/about-us/social_02.png') center no-repeat;
+			background:  url('../img/icons/about-us/social_02.png') center no-repeat;
 		}
 		&--03 {
-			background:  url('../../img/icons/about-us/social_03.png') center no-repeat;
+			background:  url('../img/icons/about-us/social_03.png') center no-repeat;
 		}
 		&--04 {
-			background:  url('../../img/icons/about-us/social_04.png') center no-repeat;
+			background:  url('../img/icons/about-us/social_04.png') center no-repeat;
 		}
 	}
 
@@ -700,7 +700,7 @@ body {
 			text-transform: uppercase;
 			letter-spacing: 0.1em;
 			color: #c0301c;
-			background: url('../../img/icons/latest-works/arrow.png') 51px 56% no-repeat;
+			background: url('../img/icons/latest-works/arrow.png') 51px 56% no-repeat;
 			padding: 0px 40px 0px 0px;
 		}
 		&:hover {
@@ -725,7 +725,7 @@ body {
 				font-size: 12px;
 				line-height: 25px;
 				padding: 0px 20px 0px 0px;
-				background: url('../../img/icons/latest-works/arrow.png') 45px 56% no-repeat;
+				background: url('../img/icons/latest-works/arrow.png') 45px 56% no-repeat;
 			}
 		}
 	}
@@ -1154,19 +1154,19 @@ body {
 	// .contacts__adress
 
 	&__adress {
-		background: url('../../img/icons/contacts/01.png') 0 10% no-repeat;
+		background: url('../img/icons/contacts/01.png') 0 10% no-repeat;
 	}
 
 	// .contacts__hotline
 
 	&__hotline {
-		background: url('../../img/icons/contacts/02.png') 0 10% no-repeat;
+		background: url('../img/icons/contacts/02.png') 0 10% no-repeat;
 	}
 
 	// .contacts__email
 
 	&__email {
-		background: url('../../img/icons/contacts/03.png') 0 10% no-repeat;
+		background: url('../img/icons/contacts/03.png') 0 10% no-repeat;
 	}
 
 	// .contacts__form

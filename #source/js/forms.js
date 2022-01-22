@@ -561,6 +561,7 @@ $('form button[type=submit]').click(function(){
 		return false;
 	}
 });
+
 function formValidate(input){
 		var er=0;
 		var form=input.parents('form');
@@ -620,6 +621,7 @@ function showMessage(html){
 	$('.popup-loading').remove();
 	$('.popup-message-body').show().html(html);
 }
+
 function clearForm(form){
 	$.each(form.find('.input'), function(index, val) {
 			$(this).removeClass('focus').val($(this).data('value'));
@@ -629,6 +631,7 @@ function clearForm(form){
 		}
 	});
 }
+
 function addError(input){
 		input.addClass('err');
 		input.parent().addClass('err');
@@ -653,6 +656,8 @@ function addError(input){
 		input.parents('.select-block').find('.select').addClass('err');
 	}
 }
+
+
 function addErrorByName(form,input__name,error_text){
 		var input=form.find('[name="'+input__name+'"]');
 	input.attr('data-error',error_text);
