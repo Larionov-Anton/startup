@@ -427,7 +427,7 @@ body {
 	&__social {
 		@include flexbox();
 		justify-content: center;
-		align-items: end;
+		align-items: flex-end;
 		position: absolute;
 		width: 100%;
 		height: 100%;
